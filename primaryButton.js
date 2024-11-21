@@ -29,8 +29,8 @@ class PrimaryButton extends HTMLElement {
       }
     `;
 
-        this.shadowRoot.appendChild(style);
-        this.shadowRoot.appendChild(button);
+        this.appendChild(style);
+        this.appendChild(button); // Attach to "this" instead of shadow DOM
     }
 }
 
